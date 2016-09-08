@@ -1,0 +1,362 @@
+<!--
+
+//
+//  options.html
+//  Shard Developemnt
+//
+//  Copyright © 2016 Shard Development. All rights reserved.
+//
+
+-->
+
+<html xmlns="https://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<!-- Install Montserrat Google webfont-->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+
+			html {
+
+    			overflow: hidden;
+
+			}
+
+			body {
+
+				padding: 40px;
+				overflow: auto;
+				font-family: "Montserrat";
+
+			}
+
+			#navBar {
+
+				width: 320px;
+				height: 100%;
+
+				position: fixed;
+				left: 0;
+				top: 0;
+
+				background-color: #23282D;
+
+			}
+
+			.navBarItem {
+
+				width: 100%;
+
+				margin: 0px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+
+				position: relative;
+
+				text-align: center;
+
+				background-color: transparent;
+
+				/*transition: 0.5s;*/
+
+			}
+
+			#arrow1, #arrow2, #arrow3 {
+
+				width: 20px;
+				height: 20px;
+
+				position: absolute;
+				right: 0px;
+				top: 40px;
+
+				visibility: hidden;
+
+			}
+
+			#icon1, #icon2, #icon3, #icon4 {
+
+				width: 40px;
+				height: 40px;
+
+				position: absolute;
+				left: 20px;
+				top: 35px;
+
+			}
+
+			.navBarItemText {
+
+				font-size: 20px;
+				color: white;
+
+			}
+
+			#settingsArea {
+
+				position: absolute;
+				left: 320px;
+				top: 0;
+
+				padding: 20px;
+
+			}
+
+			.option {
+
+				padding: 20px;
+				margin: 5px;
+				text-align: left;
+				width: 100%;
+				position: relative;
+
+				transition-property: background-color;
+				transition: 1s;
+
+				overflow: auto;
+
+			}
+
+			.saveButton {
+
+				height: 50px;
+				width: 300px;
+				background-color: #1A1E22;
+				font-size: 20px;
+				color: white;
+				border: none;
+				border-radius: 5px;
+
+				position: fixed;
+				left: 340px;
+				bottom: 40px;
+				font-family: "Montserrat";
+
+			}
+
+			.optionText {
+
+				position: absolute;
+
+				left: 120px;
+				top: 10px;
+
+			}
+
+			.listingDiv {
+
+				width: 660px;
+				height: 500px;
+
+				background-color: #1A1E22;
+				opacity: 0.8;
+
+				color: #1A1E22;
+
+				border-radius: 10px;
+
+				margin-top: 50px;
+
+				padding: 20px;
+
+				overflow: scroll;
+				overflow-y: auto;
+				overflow-x: hidden;
+
+			}
+
+			.addButton {
+
+				background-color: transparent;
+
+				color: #F73637;
+				text-decoration: bold;
+
+				border: none;
+				font-size: 30px;
+
+				position: absolute;
+				top: 100px;
+				left: 690px;
+
+			}
+
+			.addButton:focus {
+
+				outline:0;
+				
+			}
+
+
+			/* THE FOLLOWING CSS IS WRITTEN BY W3S */
+
+			.switch {
+			  position: relative;
+			  display: inline-block;
+			  width: 60px;
+			  height: 34px;
+			}
+
+			.switch input {display:none;}
+
+			.slider {
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: #ccc;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			.slider:before {
+			  position: absolute;
+			  content: "";
+			  height: 26px;
+			  width: 26px;
+			  left: 4px;
+			  bottom: 4px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			input:checked + .slider {
+			  background-color: #F73637;
+			}
+
+			input:focus + .slider {
+			  box-shadow: 0 0 1px #F73637;
+			}
+
+			input:checked + .slider:before {
+			  -webkit-transform: translateX(26px);
+			  -ms-transform: translateX(26px);
+			  transform: translateX(26px);
+			}
+
+			.slider.round {
+			  border-radius: 34px;
+			}
+
+			.slider.round:before {
+			  border-radius: 50%;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<!-- Create the main navigation bar -->
+		<div id="navBar">
+
+			<!-- Create the title navigation bar item -->
+			<div class="navBarItem">
+
+				<img id="icon1" src="images/icon.png" />				
+				
+				<p class="navBarItemText">Bleep</p>
+
+			</div>
+
+			<!-- Create the general navigation bar item -->
+			<div class="navBarItem" id="navBarItem1">
+
+				<img id="icon2" src="images/general.png" />				
+				
+				<p class="navBarItemText">General</p>
+
+				<img id="arrow1" src="images/spike.png" />
+
+			</div>
+
+			<!-- Create the words navigation bar item -->
+			<div class="navBarItem" id="navBarItem2">
+
+				<img id="icon3" src="images/words.png" />
+				
+				<p class="navBarItemText">Words</p>
+
+				<img id="arrow2" src="images/spike.png" />
+
+			</div>
+
+			<!-- Create the pages navigation bar item -->
+			<div class="navBarItem" id="navBarItem3">
+
+				<img id="icon4" src="images/pages.png" />
+				
+				<p class="navBarItemText">Pages</p>
+
+				<img id="arrow3" src="images/spike.png" />
+
+			</div>
+
+		</div>
+
+		<!-- Create the main options display area -->
+		<div id="settingsArea">
+
+			<!-- Create the General settings -->
+			<div id="generalSettingsDiv">
+
+				<h1>General Settings</h1>
+
+				<p>The General Settings let you control how your Bleep extension acts on the pages you visit.</p>
+
+				<div class="option">
+				
+					<label class="switch">
+					  <input type="checkbox"  id="generalSettings1">
+					  <div class="slider round"></div>
+					</label>
+
+					<h2 class="optionText">Include default words</h2>
+
+				</div>
+
+			</div>
+
+			<!-- Create the words settings -->
+			<div id="wordsSettingsDiv">
+
+				<h1>Word Settings</h1>
+
+				<p>Word Settings let you control what your Bleep extension sensors and acts apon with the pages you visit.</p>
+
+				<button class="addButton">+</button>
+
+				<div class="listingDiv" id="wordListingDiv">
+
+				</div>
+
+			</div>
+
+			<!-- Create the pages settings -->
+			<div id="pagesSettingsDiv">
+
+				<h1>Page Settings</h1>
+
+				<p>Page settings allows you to control what pages you apply your Bleep extension to.</p>
+				<p>Pages you disable Bleep for through the extension will appear here.</p>
+
+				<div class="listingDiv" id="pageListingDiv">
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Add JavaScript to page -->
+		<script src="options.js"></script>
+
+	</body>
+
+</html>

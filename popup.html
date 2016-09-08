@@ -1,0 +1,131 @@
+<!--
+
+//
+//  popup.html
+//  Shard Developemnt
+//
+//  Copyright © 2016 Shard Development. All rights reserved.
+//
+
+-->
+
+<!-- Set width of popup -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="min-width:300px;">
+
+	<head>
+
+		<!-- Install Montserrat Google webfont-->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+
+			body {
+
+				text-align: center;
+				padding: 40px;
+				font-family: "Montserrat";
+
+			}
+
+			#companyName {
+
+				padding: 0;
+				margin: 0;
+
+			}
+
+			.information {
+
+				padding-top: 20px;
+				padding-bottom: 20px;
+				margin: 5px;
+				text-align: left;
+				width: 100%;
+
+			}
+
+			.informationField {
+
+				width: 80%;
+				float: right;
+
+			}
+
+			#disableButton {
+
+				width: 250px;
+				height: 50px;
+				border-radius: 5px;
+				background-color: #EA4335;
+				border: none;
+
+				margin-top: 20px;
+				color: white;
+
+			}
+
+			#disableButton:focus {
+
+				outline: none;
+
+			}
+
+			#optionsButton {
+
+				width: 250px;
+				height: 50px;
+				border-radius: 5px;
+				background-color: #EA4335;
+				border: none;
+
+				margin-top: 20px;
+				color: white;
+
+			}
+
+			#optionsButton:focus {
+
+				outline: none;
+
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+	
+		<img src="images/icon.png" width="50px" height="50px"/>
+
+		<!-- Establish the main titles -->
+		<h2> Bleep Extension </h2>
+		<p id="companyName"> Shard Development </p>
+
+		<!-- Successful element created -->
+		<div id= "status" class = "information">
+
+			<img id="statusIcon" src="images/successful.png" width="30px" height="30px"/>
+
+			<p class="informationField" id="statusField">Successful</p>
+
+		</div>
+
+		<!-- Words blocked element created -->
+		<div id="issuesDetected" class="information">
+
+			<img src="images/unsuccessful.png" width="30px" height="30px"/>
+
+			<p class="informationField" id="wordsBlocked">0</p>
+		
+		</div>
+
+		<!-- Action buttons createds created -->
+		<button id="disableButton">Disable for this site</button>
+		<button id="optionsButton">Options</button>
+
+		<!-- Add JavaScript to page -->
+		<script type="text/javascript" src="popup.js"></script>
+
+	</body>
+
+</html>
