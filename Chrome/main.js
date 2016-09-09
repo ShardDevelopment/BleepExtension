@@ -64,20 +64,21 @@ function begin(){
 		  			// Replace words on page
 		  			replace()
 
+		  			// Replace images
+		  			if (items.imageSensoring) {
+
+			  			for (image in documentImages) {
+
+			  				replaceImage(documentImages[image])
+
+			  			} 
+
+		  		}
+
 		  		} else {
 
 		  			// Display page as normal
 		    		document.getElementsByTagName("html")[0].style.display="block";
-
-		  		}
-
-		  		if (items.imageSensoring) {
-
-		  			for (image in documentImages) {
-
-		  				replaceImage(documentImages[image])
-
-		  			}
 
 		  		}
 

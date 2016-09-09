@@ -268,6 +268,7 @@ function initialise() {
 
 	  	// Set the value of the default words switch
 	  	document.getElementById('generalSettings1').checked = items.defaultWord
+	  	document.getElementById('generalSettings2').checked = items.imageSensoring
 
 	});
 
@@ -369,11 +370,13 @@ function switchChanged() {
 
 	// Access switch
 	var defaultWord = document.getElementById("generalSettings1").checked
+	var imageSensoring = document.getElementById("generalSettings2").checked
 
 	// Store state of switch
 	chrome.storage.local.set({
 
 	    defaultWord: defaultWord,
+	    imageSensoring: imageSensoring
 
 	}, function() {
 
@@ -424,6 +427,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// Apply listener to the first switch
 	document.getElementById('generalSettings1').addEventListener('click', function() {
+
+		switchChanged();
+		enableOrDisableDefaultWords()
+
+	});
+
+	// Apply listener to the first switch
+	document.getElementById('generalSettings2').addEventListener('click', function() {
 
 		switchChanged();
 		enableOrDisableDefaultWords()
