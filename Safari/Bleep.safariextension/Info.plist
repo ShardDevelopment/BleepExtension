@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Shard Development</string>
+	<key>Builder Version</key>
+	<string>11601.7.8</string>
+	<key>CFBundleDisplayName</key>
+	<string>Bleep</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.sharddevelopment.Bleep-Extension</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>options.html</string>
+		<key>Popovers</key>
+		<array>
+			<dict>
+				<key>Filename</key>
+				<string>popup.html</string>
+				<key>Height</key>
+				<integer>300</integer>
+				<key>Identifier</key>
+				<string>popupIdentifier</string>
+				<key>Width</key>
+				<integer>300</integer>
+			</dict>
+		</array>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>Bleep Test</string>
+				<key>Image</key>
+				<string>images/icon@128.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>Bleep</string>
+				<key>Palette Label</key>
+				<string>Bleep</string>
+				<key>Popover</key>
+				<string>popupIdentifier</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>main.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Bleep replaces abusive language, making the internet a safer environment for everyone.</string>
+	<key>DeveloperIdentifier</key>
+	<string>0000000000</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://projects.sharddevelopment.com/</string>
+</dict>
+</plist>

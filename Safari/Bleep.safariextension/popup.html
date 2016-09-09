@@ -1,0 +1,85 @@
+<!--
+
+//
+//  popup.html
+//  Shard Developemnt
+//
+//  Copyright © 2016 Shard Development. All rights reserved.
+//
+
+-->
+
+<!-- Set width of popup -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="min-width:300px;">
+
+	<head>
+
+		<!-- Install Montserrat Google webfont-->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<style>
+
+			body, html { 
+			    overflow-x: hidden; 
+			    overflow-y: auto;
+			}
+		
+			body {
+
+				text-align: center;
+				font-family: "Montserrat";
+
+			}
+
+			#companyName {
+
+				padding: 0;
+				margin: 0;
+
+			}
+
+			.information {
+
+				padding-top: 20px;
+				margin: 5px;
+				text-align: center;
+				width: 100%;
+				display: block;
+    			margin: 0 auto;
+
+			}
+
+			.hr {
+				width: 25%;
+				border-top: 2px solid black;
+				padding-bottom: 25px;
+				color: black;
+				margin: 0 auto;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+	
+		<img src="images/icon.png" width="50px" height="50px"/>
+
+		<!-- Establish the main titles -->
+		<h2> Bleep Extension </h2>
+		<p id="companyName"> Shard Development </p>
+
+		<!-- Successful element created -->
+		<div id="status" class ="information">
+
+			<div class="hr"></div>
+
+			<img class="success" src="images/successful.png" align="middle" width="30px" height="30px"/>
+			<br />
+			<p class="informationField" id="statusField">Successful</p>
+
+		</div>
+
+	</body>
+
+</html>
