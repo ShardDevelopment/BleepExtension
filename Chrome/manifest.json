@@ -3,7 +3,7 @@
   "version": "1.0",
 
   "name": "Bleep",
-  "description": "Young ICT Explorers 2016 Project. Bleep is a web browser extension designed to soften abusive language on the internet. Bleep replaces abusive language before the user sees the page, making the internet a safer environment for everyone.",
+  "description": "Bleep is a web browser extension designed to soften abusive language on the internet.",
   "options_page": "options.html",
 
   "icons": {
