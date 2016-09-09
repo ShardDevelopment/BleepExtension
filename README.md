@@ -1,4 +1,4 @@
-# Bleep borwser extension
+# Bleep browser extension
 
 Bleep is a web browser extension designed to soften prfane language on the internet. It is currently available on the Chrome Web Store, however features such as image sensoring will be released in version 2.0.
 
